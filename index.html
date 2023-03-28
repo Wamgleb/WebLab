@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img {
+          display: inline-block;
+          margin-right: 10px;
+        }
+      </style>
+</head>
+<body>
+	<h1>Habit Tracker</h1>
+
+	<div id="header">
+		<h1>Welcome to my Habit Tracker App</h1>
+	</div>
+
+    <button onclick="window.location.href='describe.html'">
+        Опис web-застосунку
+    </button>
+
+	<h1>Мій майбутній WEB-застосунок</h1>
+	<p>Застосунок для відстеження і формування корисних звичок.</p>
+	<div class="feature">
+		<h2>Створення звичок</h2>
+		<p>Користувач може створювати звички, які він хоче формувати або змінити у своєму житті.</p>
+	</div>
+	<div class="feature">
+		<h2>Відстеження звичок</h2>
+		<p>Користувач може відстежувати свої звички та позначати, чи він їх виконує.</p>
+	</div>
+	<div class="feature">
+		<h2>Нагадування про звички</h2>
+		<p>Користувач може встановити нагадування, щоб не забувати про виконання звичок.</p>
+	</div>
+	<div class="feature">
+		<h2>Аналітика та звіти</h2>
+		<p>Користувач може переглянути статистику про виконання своїх звичок за певний період.</p>
+	</div>
+	<a href="#">Посилання на майбутній WEB-застосунок</a>
+
+	<h2>3 зображення</h2>
+	<img src="image1.jpg" alt="Зображення 1">
+	<img src="image2.jpg" alt="Зображення 2">
+	<img src="image3.jpg" alt="Зображення 3">
+
+	<h2>Таблиця</h2>
+	<table>
+		<tr>
+			<th>Звичка</th>
+			<th>Опис</th>
+			<th>Частота</th>
+		</tr>
+		<tr>
+			<td>Вправи на ранок</td>
+			<td>10 хвилин вправ з ранку</td>
+			<td>Щоденно</td>
+		</tr>
+		<tr>
+			<td>Читання книги</td>
+			<td>30 хвилин на день</td>
+			<td>Щоденно</td>
+		</tr>
+		<tr>
+			<td>Відвідування тренажерного залу</td>
+			<td>1 година 3 рази на тиждень</td>
+			<td>Щотижня</td>
+		</tr>
+	</table>
+
+	<h2>Нумерований список</h2>
+	<ol>
+		<li>Просинатися раніше</li>
+		<li>Зробити зарядку</li>
+		<li>Скласти план на день</li>
+		<li>Виконати пріоритетні завдання</li>
+		<li>Відвідати тренажерний зал</li>
+		<li>Прочитати книжку</li>
+		<li>Записати свої досягнення</li>
+	</ol>
+
+	<h2>Маркований список</h2>
+	<ul>
+		<li>Ходити на прогулянки в парку</li>
+		<li>Навчатися новим речам</li>
+		<li>Подорожувати</li>
+		<li>Допомагати близьким</li>
+		<li>Займатися творчістю</li>
+	</ul>
+
+	<div class="container">
+		<h1 id="main-heading">Заголовок</h1>
+		<p>Це перший абзац.</p>
+		<p class="important">Це другий абзац.</p>
+		<ul>
+		  <li>Елемент 1</li>
+		  <li>Елемент 2</li>
+		  <li data-id="3">Елемент 3</li>
+		</ul>
+	</div>
+
+	<h2>Форма</h2>
+	<form action="submit.php" method="post">
+		<label for="habit-name">Назва звички:</label>
+		<input type="text" id="habit-name" name="habit-name"><br><br>
+		
+		<label for="habit-description">Опис звички:</label>
+		<textarea id="habit-description" name="habit-description"></textarea><br><br>
+		
+		<label for="habit-frequency">Частота:</label>
+		<select id="habit-frequency" name="habit-frequency">
+			<option value="daily">Щоденно</option>
+			<option value="weekly">Щотижня
