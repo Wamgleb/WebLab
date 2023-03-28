@@ -1,0 +1,150 @@
+/* Стилі для заголовку */
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  #header {
+    background-color: #ebae1d;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Застосовуємо стилі для елементу з класом "feature" */
+  .feature {
+    background-color: yellow;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  /* Застосовуємо стилі для всіх посилань на сторінці */
+  a {
+    color: red;
+    text-decoration: none;
+  }
+
+  /*Стилі для кнопки */
+  button {
+    background-color: #c97e1c;
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  /* Стилі для зображень */
+  img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Стилі для таблиці */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+  }
+  
+  th,
+  td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Стилі для списків */
+  ul {
+    margin: 1rem 0;
+    padding: 0 0 0 2rem;
+  }
+  
+  ol {
+    margin: 1rem 0;
+    padding: 0 0 0 2rem;
+  }
+  
+  li {
+    margin: 0.5rem 0;
+  }
+  
+  /* Стилі для форми */
+  form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  /*Сусідній селектор*/
+  h1 + p {
+    font-weight: bold;
+  }
+
+  /*Дочірній селектор*/
+  ul > li {
+    color: blue;
+  }
+
+  /*Селектор атрибута*/
+  li[data-id="3"] {
+    background-color: yellow;
+  }
+
+  /*Універсальний селектор*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1.2rem;
+  }
+  
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .error {
+    color: red;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
