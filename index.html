@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img {
+          display: inline-block;
+          margin-right: 10px;
+        }
+      </style>
+</head>
+<body>
+	<h1>Habit Tracker</h1>
+
+    <button onclick="window.location.href='describe.html'">
+        Опис web-застосунку
+    </button>
+
+	<h2>3 зображення</h2>
+	<img src="image1.jpg" alt="Зображення 1">
+	<img src="image2.jpg" alt="Зображення 2">
+	<img src="image3.jpg" alt="Зображення 3">
+
+	<h2>Таблиця</h2>
+	<table>
+		<tr>
+			<th>Звичка</th>
+			<th>Опис</th>
+			<th>Частота</th>
+		</tr>
+		<tr>
+			<td>Вправи на ранок</td>
+			<td>10 хвилин вправ з ранку</td>
+			<td>Щоденно</td>
+		</tr>
+		<tr>
+			<td>Читання книги</td>
+			<td>30 хвилин на день</td>
+			<td>Щоденно</td>
+		</tr>
+		<tr>
+			<td>Відвідування тренажерного залу</td>
+			<td>1 година 3 рази на тиждень</td>
+			<td>Щотижня</td>
+		</tr>
+	</table>
+
+	<h2>Нумерований список</h2>
+	<ol>
+		<li>Просинатися раніше</li>
+		<li>Зробити зарядку</li>
+		<li>Скласти план на день</li>
+		<li>Виконати пріоритетні завдання</li>
+		<li>Відвідати тренажерний зал</li>
+		<li>Прочитати книжку</li>
+		<li>Записати свої досягнення</li>
+	</ol>
+
+	<h2>Маркований список</h2>
+	<ul>
+		<li>Ходити на прогулянки в парку</li>
+		<li>Навчатися новим речам</li>
+		<li>Подорожувати</li>
+		<li>Допомагати близьким</li>
+		<li>Займатися творчістю</li>
+	</ul>
+
+	<h2>Форма</h2>
+	<form action="submit.php" method="post">
+		<label for="habit-name">Назва звички:</label>
+		<input type="text" id="habit-name" name="habit-name"><br><br>
+		
+		<label for="habit-description">Опис звички:</label>
+		<textarea id="habit-description" name="habit-description"></textarea><br><br>
+		
+		<label for="habit-frequency">Частота:</label>
+		<select id="habit-frequency" name="habit-frequency">
+			<option value="daily">Щоденно</option>
+			<option value="weekly">Щотижня
